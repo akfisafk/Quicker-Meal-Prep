@@ -21,7 +21,7 @@ export const ByTime = () => {
     const [recipe, dispatch] = useReducer(reducer, '');
 
     async function getRecipe(minute) {
-        const response = await fetch(`/apis/recipe`, {
+        const response = await fetch(`https://akfisafk-quicker-meal-prep-backend.zeet.app/apis/recipe`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
