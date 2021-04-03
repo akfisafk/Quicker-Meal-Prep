@@ -1,0 +1,85 @@
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  background-color: rgb(244, 248, 248);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: adobe-devanagari, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div#root {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.recipe {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding: 40px;
+  background-color: aliceblue;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.img {
+  height: 65%;
+  margin: 0 40px;
+}
+
+@media only screen and (max-width: 1450px) {
+  .img {
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .img {
+    height: 40%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img {
+    width: 80%;
+    height: auto;
+  }
+  .img:nth-child(2) {
+    display: none;
+  }
+}
